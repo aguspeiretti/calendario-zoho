@@ -1,0 +1,302 @@
+.container{
+	display: flex;
+	justify-content: end;
+  }
+  
+  .calendar-size{
+	width: 90vw;
+	height: 100vh;
+	background-Color: "white";
+	color: "black";
+  }
+  
+  .rbc-timeslot-group{
+	min-height: 120px !important;
+	font-family: sans-serif;
+  
+  }
+  
+  .rbc-event-label{
+	display: none !important;
+  }
+  
+  .rbc-event{
+   /* left: 0!important; */
+   font-family: sans-serif;
+   font-size: 12px;
+   text-wrap: nowrap;
+  }
+  .rbc-time-slot{
+	display: flex;
+  }
+  .rbc-events-container{
+	margin: 0 !important;
+  }
+  
+  .rbc-event,
+  .rbc-backgroud-event{
+  
+	padding: 0;
+	margin: 0;
+   
+  }
+  
+  .evento{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	border-radius: 4px !important;
+	color: black;
+  
+  }
+  .evento ul{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding-left:2px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+   
+  }
+  .evento ul svg{
+	margin-right: 2px;
+	font-size: 10px;
+  }
+  .evento ul li{
+	height: 14px;
+	display: flex;
+	align-items: center;
+   
+  
+  }
+  .pautada ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #FFA246 ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .pautada{
+	background-color: #f3dabd;
+	border: 1px solid #FFA246 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .por-pautar ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #F8F65F ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .por-pautar{
+	background-color: #f3ecc5;
+	border: 1px solid #F8F65F !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  .realizada ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #5590FF ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .realizada{
+	background-color: #b3caf5;
+	border: 1px solid #5590FF !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  .inconvenitente ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #8de26b ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .inconvenitente{
+	background-color: #cae7be;
+	border: 1px solid #91e96e !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .sin-conferencia ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #8a8a8a ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .sin-conferencia{
+	background-color: #f5f5f5;
+	border: 1px solid #B7B7B7 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .consultada-profesional ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #E789FF ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .consultada-profesional{
+	background-color: #ebd2f1;
+	border: 1px solid #E789FF !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  .consultada-cliente ul li::before {
+	padding: 0;
+	content: \2022; /* Código del punto */
+	color: #FF4E47 ; /* Color deseado */
+	font-size: 25px;
+	display: inline-block;
+	width: 10px; /* Ancho del punto */
+	margin-left: -12px; /* Mueve el punto hacia la izquierda para que esté alineado con el texto */
+	margin-right: 4px;
+  }
+  
+  .consultada-cliente{
+	background-color: #f0adaa;
+	border: 1px solid #FF4E47 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+  }
+  .rbc-event:hover {
+	background-color: #dcdcdc; /* Cambia el color de fondo en el hover */
+  }
+  
+  .popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(252, 251, 251);
+   width: 550px;
+   height: 450px;
+	z-index: 9999;
+   border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 0px 0px 44px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 44px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 44px 4px rgba(0,0,0,0.75);
+  }
+  
+  .popup-content {
+	width: 90%;
+	height: 85%;
+	text-align: center;
+	background-color: #8de26b;
+  }
+  
+  .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+  }
+  
+  /* Estilo para oscurecer el fondo */
+   .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo */
+	 z-index: 9998;
+  }
+  
+  .selector{
+	width: 15vw;
+	height: 100vh;
+  background-color: white;
+	color: black;
+	padding: 0 10px;
+	
+  }
+  .selector select{
+	width: 100%;
+	border-radius: 5px;
+	height: 30px;
+  } 
+  
+  /* ocultar vista mensual */
+  
+  
+  
+  .rbc-month-header > :last-child,
+	.rbc-month-header > :nth-last-child(2) {
+	display: none;
+  }
+  
+  .rbc-row-segment {
+	  flex-basis: 20% !important;
+	  max-width: 20% !important;
+  }
+  
+  .rbc-month-row > .rbc-row-bg > :first-child,
+  .rbc-month-row > .rbc-row-bg > :last-child {
+	display: none;
+  }
+  
+  .rbc-row-content > .rbc-row > .rbc-date-cell:first-child,
+  .rbc-row-content > .rbc-row > .rbc-date-cell:last-child {
+	display:none;
+  }
