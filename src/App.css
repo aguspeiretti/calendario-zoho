@@ -1,6 +1,7 @@
 .container{
 	display: flex;
 	justify-content: end;
+	font-family: sans-serif;
   }
   
   .calendar-size{
@@ -19,7 +20,13 @@
   .rbc-event-label{
 	display: none !important;
   }
-  
+  .rbc-time-slot{
+	border-top:1px solid rgb(209, 209, 209) !important;
+  }
+  .rbc-time-slot span{
+	height: 0px !important;
+	
+  }
   .rbc-event{
    /* left: 0!important; */
    font-family: sans-serif;
@@ -133,7 +140,7 @@
 	padding: 0;
 	margin: 0;
   }
-  .inconvenitente ul li::before {
+  .inconveniente ul li::before {
 	padding: 0;
 	content: \2022; /* Código del punto */
 	color: #8de26b ; /* Color deseado */
@@ -144,7 +151,7 @@
 	margin-right: 4px;
   }
   
-  .inconvenitente{
+  .inconveniente{
 	background-color: #cae7be;
 	border: 1px solid #91e96e !important;
 	display: flex;
@@ -238,18 +245,39 @@
   }
   
   .popup-content {
-	width: 90%;
-	height: 85%;
-	text-align: center;
-	background-color: #8de26b;
+padding: 10px;
+font-family: sans-serif;
   }
-  
-  .close-btn {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	border-radius: 10px;
-	border: 1px solid black;
+  .insideHour{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	justify-content: space-evenly;
+	border-radius: 5px;
+  }
+  .insideHour p{
+	margin: 0;
+	margin-left: 10px;
+  }
+  .insideHour svg{
+	margin-right: 10px;
+  }
+  .botonera {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  .botonera button{
+	border-radius: 15px;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+	border: 2px solid white;
+	text-align: center;
   }
   
   /* Estilo para oscurecer el fondo */
@@ -281,7 +309,7 @@
   
   
   
-  .rbc-month-header > :last-child,
+  /* .rbc-month-header > :last-child,
 	.rbc-month-header > :nth-last-child(2) {
 	display: none;
   }
@@ -299,4 +327,15 @@
   .rbc-row-content > .rbc-row > .rbc-date-cell:first-child,
   .rbc-row-content > .rbc-row > .rbc-date-cell:last-child {
 	display:none;
-  }
+  } */
+.rbc-day-slot  .custom-time-slot{
+display: none !important;
+}
+
+.rbc-time-gutter .rbc-timeslot-group{
+display: flex;
+justify-content: space-between;
+background-color: #f7f7f7;
+font-size: 10px;
+padding: 5px;
+}
