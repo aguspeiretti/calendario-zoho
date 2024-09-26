@@ -18,9 +18,7 @@ export function getUsers() {
       page: 1,
       per_page: 200,
     })
-      .then(function (response) {
-        console.log("respuesta users", response);
-      })
+      .then(function (response) {})
       .catch(function (error) {
         reject(error);
       });
@@ -28,7 +26,6 @@ export function getUsers() {
 }
 
 export function attachFile(registerID, file) {
-  console.log("data del attach");
   return new Promise(function (resolve, reject) {
     window.ZOHO.CRM.API.attachFile({
       Entity: "Leads",
@@ -37,7 +34,6 @@ export function attachFile(registerID, file) {
     })
       .then(function (data) {
         resolve(data);
-        console.log("esta es la data del attach", data);
       })
       .catch(function (error) {
         reject(error);
@@ -48,9 +44,7 @@ export function attachFile(registerID, file) {
 export function getFields(entrity) {
   return new Promise(function (resolve, reject) {
     window.ZOHO.CRM.META.getFields({ Entity: "Leads" })
-      .then(function (response) {
-        console.log("respuesta Fields", response);
-      })
+      .then(function (response) {})
       .catch(function (error) {
         reject(error);
       });
@@ -60,15 +54,12 @@ export function getFields(entrity) {
 export function execute(func_name, req_data) {
   return new Promise(function (resolve, reject) {
     window.ZOHO.CRM.FUNCTIONS.execute(func_name, req_data)
-      .then(function (data) {
-        console.log(data);
-      })
+      .then(function (data) {})
       .catch(function (error) {
         reject(error);
       });
   });
 }
-
 
 // export function getUsers() {
 //   return new Promise(function (resolve, reject) {
